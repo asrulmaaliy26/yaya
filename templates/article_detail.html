@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ article.title }}</title>
+</head>
+<body>
+    <h1>{{ article.title }}</h1>
+    {% if article.image %}
+        <img src="{{ article.image.url }}" alt="{{ article.title }}">
+    {% endif %}
+    {% if article.date %}
+        <p>{{ article.date }}</p>
+    {% endif %}
+    <p>{{ article.content }}</p>
+    {% if article.link %}
+        <p><a href="{{ article.link }}" target="_blank">Read more</a></p>
+    {% endif %}
+    {% if article.author %}
+        <p>Author: {{ article.author }}</p>
+    {% endif %}
+    <p>Category: {{ article.category.name }}</p>
+    <p>LPI: {{ article.lpi.name }}</p>
+</body>
+</html>

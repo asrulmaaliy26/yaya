@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}PP AL - MANNAN{% endblock %}
+{% block content %}
+
+  <section>
+  <img style="margin-top: 60px;" width="100%" src="{% static 'assets/img/header/akreditasi.png' %}" alt="">
+  </section>
+
+  <!-- section -->
+  <div class="container pt-5 pb-5 ak1">
+      <div class="row text-center pt-5">
+        <h4 class="pb-5">Pernyataan Bahwa PP AL - MANNAN<br>
+          Terakreditasi A</h4>
+          <div class="col-md-6 pt-2 text-center">
+            <img style="width: 90%;" src="{% static 'assets/img/akreditasi/akr1.jpg' %}" alt="">
+          </div>
+          <div class="col-md-6 pt-2">
+            <img style="width: 90%;" src="{% static 'assets/img/akreditasi/akr2.jpg' %}" alt="">
+          </div>
+      </div>
+      <div class="row text-center pt-5">
+        <a href="{% stat 'assets/img/Akreditasi-Sekolah-2019-2023-SMK-Telekomukinasi-Sandhy-Putra-Purwokerto.pdf' %}"> <button style="background-color: #9B1E01; border:none; width: 200px;" type="button" class="btn btn-danger justify-content-center mt-4 mb-4">Lihat PDF Disini</button></a>
+      </div>
+  </div>
+  <!-- akhir section -->
+{% endblock %}
